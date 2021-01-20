@@ -8,28 +8,27 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>service-feign</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>service-feign</name>
-    <packaging>jar</packaging>
-    <description>service-feign project for Spring Boot</description>
 
+    <artifactId>service-hi</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>service-hi</name>
+    <description>service-hi project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
-
     </dependencies>
+
 
     <dependencyManagement>
         <dependencies>
@@ -51,7 +50,5 @@
             </plugin>
         </plugins>
     </build>
-
-
 
 </project>
